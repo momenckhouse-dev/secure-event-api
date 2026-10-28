@@ -1,6 +1,6 @@
 # secure-event-api
 
-[![ci](https://github.com/momenckhouse-dev/app-source/actions/workflows/ci.yml/badge.svg)](https://github.com/momenckhouse-dev/app-source/actions/workflows/ci.yml)
+[![ci](https://github.com/momenckhouse-dev/secure-event-api/actions/workflows/ci.yml/badge.svg)](https://github.com/momenckhouse-dev/secure-event-api/actions/workflows/ci.yml)
 
 Security-event ingestion API for the Secure GitOps Platform. Accepts events over HTTP, validates
 them, archives them to an S3 bucket provisioned through the platform's `SecureService` API, and
@@ -44,7 +44,7 @@ Every image is tagged with the first 12 characters of its commit and is immutabl
 |---|---|---|
 | `06258c2f0630` | first image pushed through OIDC | ECR |
 | `b21669992f88` | CI badge | staging and production |
-| `ef872a3e3dde` | request IDs ([PR #1](https://github.com/momenckhouse-dev/app-source/pull/1)) | staging, then production through the approval gate ([gitops-config PR #10](https://github.com/momenckhouse-dev/gitops-config/pull/10)) |
+| `ef872a3e3dde` | request IDs ([PR #1](https://github.com/momenckhouse-dev/secure-event-api/pull/1)) | staging, then production through the approval gate ([gitops-config PR #10](https://github.com/momenckhouse-dev/gitops-config/pull/10)) |
 
 24 unit tests (`pytest -q`).
 
